@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Kenzie Movies</title>
   </head>
   <body>
     <header>
@@ -20,63 +23,66 @@
             corrupti, eveniet deserunt. Eaque ea magnam quia nobis aspernatur!
             Ea, doloremque assumenda.
           </p>
-          <button>Ir para seção dos filmes</button>
+          <button>Ir para seção das séries</button>
         </div>
       </section>
     </header>
     <main>
+    <div id="container_principal">
+      <section id="filtros">
+        <h2>Séries</h2>
+        <ul>
+          <li><button>Todos</button></li>
+          <li><button>Ação</button></li>
+          <li><button>Comédia</button></li>
+          <li><button>Romance</button></li>
+          <li><button>Histórico</button></li>
+        </ul>
+      </section>
+      
       <section class="vitrine">
-        <div>
-          <nav>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </nav>
+        <div class="vitrine_movie">
+          <h2>Velozes e furioso</h2>
+          <div class="vitrine_movie_infos">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quas
+              amet accusantium quaerat est? Beatae ipsum quaerat perspiciatis
+              necessitatibus earum. Natus, veniam porro? Soluta hic quidem enim
+              nulla, sapiente fugit?
+            </p>
+            <span>Assistir mais tarde</span>
+          </div>
         </div>
 
-        <article class="vitrine_movie">
-          <h2>Velozes e furioso</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quas
-            amet accusantium quaerat est? Beatae ipsum quaerat perspiciatis
-            necessitatibus earum. Natus, veniam porro? Soluta hic quidem enim
-            nulla, sapiente fugit?
-          </p>
-          <div class="vitrine_movie_addMovie">
-            <span>Assistir mais tarde</span>
+        <section class="vitrine">
+          <div class="vitrine_movie">
+            <h2>Velozes e furioso</h2>
+            <div class="vitrine_movie_infos">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quas
+                amet accusantium quaerat est? Beatae ipsum quaerat perspiciatis
+                necessitatibus earum. Natus, veniam porro? Soluta hic quidem enim
+                nulla, sapiente fugit?
+              </p>
+              <span>Assistir mais tarde</span>
+            </div>
           </div>
-        </article>
 
-        <article class="vitrine_movie">
-          <h2>Velozes e furioso</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quas
-            amet accusantium quaerat est? Beatae ipsum quaerat perspiciatis
-            necessitatibus earum. Natus, veniam porro? Soluta hic quidem enim
-            nulla, sapiente fugit?
-          </p>
-          <div class="vitrine_movie_addMovie">
-            <span>Assistir mais tarde</span>
-          </div>
-        </article>
-
-        <article class="vitrine_movie">
-          <h2>Velozes e furioso</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quas
-            amet accusantium quaerat est? Beatae ipsum quaerat perspiciatis
-            necessitatibus earum. Natus, veniam porro? Soluta hic quidem enim
-            nulla, sapiente fugit?
-          </p>
-          <div class="vitrine_movie_addMovie">
-            <span>Assistir mais tarde</span>
-          </div>
-        </article>
+          <section class="vitrine">
+            <div class="vitrine_movie">
+              <h2>Velozes e furioso</h2>
+              <div class="vitrine_movie_infos">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quas
+                  amet accusantium quaerat est? Beatae ipsum quaerat perspiciatis
+                  necessitatibus earum. Natus, veniam porro? Soluta hic quidem enim
+                  nulla, sapiente fugit?
+                </p>
+                <span>Assistir mais tarde</span>
+              </div>
+            </div>
       </section>
+    </div>
 
       <aside class="cart">
         <h3>Filmes salvos</h3>
@@ -84,20 +90,33 @@
         <section class="cart_display">
           <ul class="cart_list">
             <li class="cart_movie">
-              <img />
-              <div>
-                <h4>Velozes e furiosos</h4>
-                <span> Assistir agora</span>
+              <img src="./src/assets/img/stranger_things-icon.png" alt="stranger things" />
+
+              <div class="cart_movie_infos">
+                <div class="cart_movie_title">
+                  <h4>Stranger Things</h4>
+                  <button class="trash_button"><img src="./src/assets/img/trash-icon.png"></button>
+                </div>
+                <div class="cart_movie_play">
+                  <button class="play_button"><img src="./src/assets/img/play-icon.png"></button>
+                  <span> Assistir agora</span>
+                </div>
               </div>
-              <button>X</button>
+              
             </li>
+
             <li class="cart_movie">
-              <img />
-              <div>
-                <h4>Velozes e furiosos</h4>
-                <span> Assistir agora</span>
+              <img src="./src/assets/img/stranger_things-icon.png" alt="stranger things" />
+              <div class="cart_movie_infos">
+                <div class="cart_movie_title">
+                  <h4>Stranger Things</h4>
+                  <button class="trash_button"><img src="./src/assets/img/trash-icon.png"></button>
+                </div>
+                <div class="cart_movie_play">
+                  <button class="play_button"><img src="./src/assets/img/play-icon.png"></button>
+                  <span> Assistir agora</span>
+                </div>
               </div>
-              <button>X</button>
             </li>
           </ul>
         </section>
